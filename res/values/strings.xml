@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ribbit</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login to start</string>
+    <string name="user_name_hint">User Name</string>
+    <string name="user_password_hint">Password</string>
+    <string name="log_in_btn">Log In</string>
+    <string name="signup_text">Sign Up!</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="username_signup">User Name</string>
+    <string name="userpassword_signup">Password</string>
+    <string name="usermail_signup">Email</string>
+    <string name="signup_btn_text_signup">Sign Up!</string>
+
+</resources>
