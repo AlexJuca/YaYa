@@ -1,0 +1,10 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="light_grey">#bbbbbb</color>
+	<color name="apptheme_color">#65458f</color>
+	<color name="light_purple_button">#e1d2f3</color>
+	<color name="pressed_purple_button">#ba9dda</color>
+	<color name="focused_purple_button">#d6c3ed</color>
+	<color name="text_color">#48286E</color>
+</resources>

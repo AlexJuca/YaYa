@@ -2,46 +2,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    style="@style/AuthBackground"
     tools:context="com.AlexandreJuca.ribbit.LoginActivity" >
 
-    <EditText
-        android:id="@+id/userNameField"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:ems="10"
-        android:hint="@string/user_name_hint" />
+    <ImageView
+        android:id="@+id/backgroundImage"
+        style="@style/AuthBackgrounImage"
+        android:contentDescription="@string/background_description"
+         />
 
-    <EditText
-        android:id="@+id/userPasswordField"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/userNameField"
-        android:layout_below="@+id/userNameField"
-        android:ems="10"
-        android:hint="@string/user_password_hint"
-        android:inputType="textPassword" />
+    <TextView
+        android:id="@+id/Title"
+        style="@style/AuthTitle"
+        android:text="@string/app_name"
+         />
 
-    <Button
-        android:id="@+id/loginId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/userPasswordField"
-        android:layout_below="@+id/userPasswordField"
-        android:text="@string/log_in_btn" />
+    <TextView
+        android:id="@+id/Subtitle"
+        android:layout_below="@+id/Title"
+       	style="@style/SubTitle"
+        android:text="@string/subtitle"
+       />
+
+    <LinearLayout
+        android:id="@+id/edit_text_layout"
+        android:layout_below="@+id/Subtitle"
+        style="@style/AuthLightBox">
+
+        <EditText
+            android:id="@+id/userNameField"
+            android:hint="@string/user_name_hint"
+            style="@style/AuthEditBox"
+             />
+        
+        <EditText
+            android:id="@+id/userPasswordField"
+            android:hint="@string/user_password_hint"
+            android:inputType="textPassword"
+            style="@style/AuthEditBox"
+        	 />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/signup_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/loginId"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="63dp"
-        android:text="@string/signup_text" />
+        android:text="@string/signup_text"
+        android:layout_below="@+id/loginButton"
+        style="@style/AuthTextView"
+         />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:text="@string/log_in_btn"
+        
+        android:layout_alignLeft="@+id/edit_text_layout"
+        android:layout_alignRight="@+id/edit_text_layout"
+        android:layout_below="@+id/edit_text_layout"
+        style="@style/AuthButton" 
+         />
 
 </RelativeLayout>
