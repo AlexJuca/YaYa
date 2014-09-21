@@ -9,7 +9,7 @@ import com.parse.ParseInstallation;
 import com.parse.ParseUser;
 import com.parse.PushService;
 
-public class RibbitApplication extends Application{
+public class YaYaApplication extends Application{
 
 	public void onCreate() 
 	{

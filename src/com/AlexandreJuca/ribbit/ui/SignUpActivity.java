@@ -15,7 +15,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.AlexandreJuca.ribbit.R;
-import com.AlexandreJuca.ribbit.RibbitApplication;
+import com.AlexandreJuca.ribbit.YaYaApplication;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
@@ -100,7 +100,7 @@ public class SignUpActivity extends Activity {
 					if( e == null)
 					{
 						
-						RibbitApplication.updateParseIntsallatiion(ParseUser.getCurrentUser());
+						YaYaApplication.updateParseIntsallatiion(ParseUser.getCurrentUser());
 						
 						
 						setProgressBarIndeterminateVisibility(false);

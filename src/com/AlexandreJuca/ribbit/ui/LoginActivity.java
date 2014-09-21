@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import com.AlexandreJuca.ribbit.R;
-import com.AlexandreJuca.ribbit.RibbitApplication;
+import com.AlexandreJuca.ribbit.YaYaApplication;
 import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseUser;
@@ -88,7 +88,7 @@ public class LoginActivity extends Activity {
 							if (e == null)
 							{
 								setProgressBarIndeterminateVisibility(false);
-								RibbitApplication.updateParseIntsallatiion(user);
+								YaYaApplication.updateParseIntsallatiion(user);
 								login();
 							}
 							else
