@@ -2,44 +2,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0099cc"
-    tools:context="com.AlexandreJuca.ribbit.AboutActivity" >
+   
+    tools:context="com.AlexandreJuca.ribbit.ui.AboutActivity" >
 
-    <!--
-         The primary full-screen view. This can be replaced with whatever view
-         is needed to present your content, e.g. VideoView, SurfaceView,
-         TextureView, etc.
-    -->
-
-    <ImageView
-        android:id="@+id/message_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="fitXY"
-        android:src="@drawable/bg" />
-
-    <!--
-         This FrameLayout insets its children based on system windows using
-         android:fitsSystemWindows.
-    -->
-
-    <FrameLayout
+    <RelativeLayout
+        style="@style/AuthBackground"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fitsSystemWindows="true" >
+        android:layout_height="match_parent" >
 
         <TextView
-            android:id="@+id/fullscreen_content"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:keepScreenOn="true"
-            android:text="@string/dummy_content"
-            android:textAppearance="?android:attr/textAppearanceSmallInverse"
-            android:textColor="#FFF"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:id="@+id/textView1"
+             style="@style/AuthTitle"
+            android:text="@string/app_name"
 
-    </FrameLayout>
+    	></TextView>
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/AuthTextView"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="68dp"
+            android:gravity="center_horizontal"
+            android:text="@string/creator"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+         />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/AuthTextView"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="20dp"
+            android:text="@string/why"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/background_light" />
+
+</RelativeLayout>
 
 </FrameLayout>

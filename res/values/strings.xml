@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Ribbit</string>
+    <string name="app_name">YaYa</string>
     <string name="title_section1">Inbox</string>
     <string name="title_section2">Friends</string>
     <string name="title_section3">Section 3</string>
@@ -31,7 +31,7 @@
     <string name="camera_action_label">Camera</string>
     <string name="error_external_storage">There was a problem accesing your devices external storage. Free some space.</string>
     <string name="menu_action_send_label">Send</string>
-	<string name="subtitle">A Treehouse project</string>
+	<string name="subtitle">My first android app!</string>
     <string-array name="camera_choices">
         <item>Take Photo</item>
         <item>Take Video</item>
@@ -41,16 +41,19 @@
 
     <string name="empty_recipients_label">Choose some friends first!</string>
     <string name="title_activity_recipients">Recipients</string>
-    <string name="title_about">About Ribbit!</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">YaYa!</string>
+    <string name="title_about">About YaYa</string>
     <string name="upload_file_error">"There was an error with the file selected. Please select another one. "</string>
     <string name="message_sucess">Message sent</string>
     <string name="failed_message">Failed to send message!</string>
     <string name="no_network_connection">No Network Connection. Please check internet connection.</string>
     <string name="error_on_fecth_users">Error getting users.</string>
-    <string name="title_activity_view_image">Ribbit</string>
+    <string name="title_activity_view_image">YaYa</string>
     <string name="background_description">Ribbit Background Image</string>
     <string name="signup_cancel_btn_text_signup">CANCEL</string>
-
+    <string name="user_gravatar">user gravatar</string>
+	<string name="user_gravatar_checkmarck">user gravatar checkmark</string>
+	<string name="push_message">You have a new message from %s</string>
+	<string name="no_inbox_messages">You have no messages!</string>
+	<string  name="creator">Created by Alexandre Juca corextechnologies@gmail.com</string>
+	<string name="why">This is a simple app I created to learn the android ecosystem or api. Nothing special really.</string>
 </resources>

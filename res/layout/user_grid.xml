@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ 	style="@style/Theme.Ribbit.LightPurpleBackground"
+    tools:context="com.AlexandreJuca.ribbit.MainActivity$FriendsFragment" >
+	<GridView
+        android:id="@+id/friendsGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:numColumns="3"
+        android:horizontalSpacing="@dimen/user_grid_spacing"
+        android:verticalSpacing="@dimen/user_grid_spacing"
+        android:clipToPadding="false"
+        style="@style/Theme.Ribbit.LightPurpleBackground.GridView"
+        android:layout_alignParentTop="true" >
+    </GridView>
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

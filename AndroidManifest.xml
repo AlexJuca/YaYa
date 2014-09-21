@@ -12,10 +12,22 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.AlexandreJuca.ribbit.permission.C2D_MESSAGE" />
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
+
+    <permission
+        android:name="com.AlexandreJuca.ribbit.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.AlexandreJuca.ribbit.permission.C2D_MESSAGE" />
+
+    
 
     <application
         android:name=".RibbitApplication"
@@ -24,7 +36,7 @@
         android:label="@string/app_name"
         android:theme="@style/Theme.Ribbit" >
         <activity
-            android:name=".MainActivity"
+            android:name="com.AlexandreJuca.ribbit.ui.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -34,17 +46,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name="com.AlexandreJuca.ribbit.ui.LoginActivity"
             android:label="@string/title_activity_login"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".SignUpActivity"
+            android:name="com.AlexandreJuca.ribbit.ui.SignUpActivity"
             android:label="@string/title_activity_sign_up"
-            android:parentActivityName=".LoginActivity" android:screenOrientation="portrait">
+            android:parentActivityName="com.AlexandreJuca.ribbit.ui.LoginActivity"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".EditFriendsActivity"
+            android:name="com.AlexandreJuca.ribbit.ui.EditFriendsActivity"
             android:label="@string/title_activity_edit_friends"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait" >
@@ -53,8 +66,8 @@
                 android:value="com.AlexandreJuca.ribbit.MainActivity" />
         </activity>
         <activity
-            android:name=".RecipientsActivity"
-            android:label="@string/title_activity_recipients"
+            android:name="com.AlexandreJuca.ribbit.ui.ViewImageActivity"
+            android:label="@string/title_activity_view_image"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait" >
             <meta-data
@@ -62,23 +75,33 @@
                 android:value="com.AlexandreJuca.ribbit.MainActivity" />
         </activity>
         <activity
-            android:name=".AboutActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_about"
+            android:name="com.AlexandreJuca.ribbit.ui.RecipientsActivity"
+            android:label="@string/title_activity_recipients"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/FullscreenTheme" android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.AlexandreJuca.ribbit.MainActivity" />
         </activity>
-        <activity
-            android:name=".ViewImageActivity"
-            android:label="@string/title_activity_view_image"
-            android:parentActivityName=".MainActivity" android:screenOrientation="portrait">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.AlexandreJuca.ribbit.MainActivity" />
-        </activity>
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.AlexandreJuca.ribbit" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

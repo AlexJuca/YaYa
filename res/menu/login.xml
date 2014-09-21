@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.AlexandreJuca.ribbit.LoginActivity" >
+    tools:context="com.AlexandreJuca.ribbit.ui.LoginActivity" >
 
     <item
         android:id="@+id/action_settings"

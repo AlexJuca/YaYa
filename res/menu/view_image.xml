@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.AlexandreJuca.ribbit.ViewImageActivity" >
+    tools:context="com.AlexandreJuca.ribbit.ui.ViewImageActivity" >
 
     <item
         android:id="@+id/action_settings"
