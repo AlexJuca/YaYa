@@ -4,17 +4,17 @@
 
 A dead simple messaing app that I created to learn the android api. My first app actually.
 
-![Preview](https://github.com/AlexJuca/YaYa/Screenshot_2014-09-22-11-16-20.png "Preview")
+![Preview](https://github.com/AlexJuca/YaYa/blob/master/Screenshot_2014-09-22-11-16-20.png "Preview")
 
-![Preview](https://github.com/AlexJuca/YaYa/Screenshot_2014-09-22-11-16-29.png "Preview")
+![Preview](https://github.com/AlexJuca/YaYa/blob/master/Screenshot_2014-09-22-11-16-29.png "Preview")
 
-![Preview](https://github.com/AlexJuca/YaYa/Screenshot_2014-09-22-11-17-16.png "Preview")
+![Preview](https://github.com/AlexJuca/YaYa/blob/master/Screenshot_2014-09-22-11-17-16.png "Preview")
 
-![Preview](https://github.com/AlexJuca/YaYa/Screenshot_2014-09-22-11-17-39.png "Preview")
+![Preview](https://github.com/AlexJuca/YaYa/blob/master/Screenshot_2014-09-22-11-17-39.png "Preview")
 
-![Preview](https://github.com/AlexJuca/YaYa/Screenshot_2014-09-22-11-17-49.png "Preview")
+![Preview](https://github.com/AlexJuca/YaYa/blob/master/Screenshot_2014-09-22-11-17-49.png "Preview")
 
-![Preview](https://github.com/AlexJuca/YaYa/Screenshot_2014-09-22-11-18-57.png "Preview")
+![Preview](https://github.com/AlexJuca/YaYa/blob/master/Screenshot_2014-09-22-11-18-57.png "Preview")
 
 
 ## What does it do?
