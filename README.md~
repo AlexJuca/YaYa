@@ -1,15 +1,42 @@
-A simple Android app that I created during my time at treehouse
+#YaYa
 
-What does it do?
+## Introduction
 
-It's a basic messaging app.
+A dead simple messaing app that I created to learn the android api. My first app actually.
 
-You can send images + videos but not text (yet)
+![Preview](https://github.com/AlexJuca/YaYa/Screenshot_2014-09-22-11-16-20.png "Preview")
 
-Login in Signup and test it out.
+![Preview](https://github.com/AlexJuca/YaYa/Screenshot_2014-09-22-11-16-29.png "Preview")
 
-Should work on Android HoneyComb and up.
+![Preview](https://github.com/AlexJuca/YaYa/Screenshot_2014-09-22-11-17-16.png "Preview")
 
-If your new to Android you can go ahead and see how I did things there like the network stuff, sending images, handling users, the login, logout code, handling of images, videos etc and whatever! Enjoy! :)
+![Preview](https://github.com/AlexJuca/YaYa/Screenshot_2014-09-22-11-17-39.png "Preview")
 
-oh and it's unifinished so you might find some bugs.
+![Preview](https://github.com/AlexJuca/YaYa/Screenshot_2014-09-22-11-17-49.png "Preview")
+
+![Preview](https://github.com/AlexJuca/YaYa/Screenshot_2014-09-22-11-18-57.png "Preview")
+
+
+## What does it do?
+
+It sends images and videos to other users.
+
+Works on Android API level 16 and up.
+
+## License
+
+
+Copyright (c) 2013-2014 Alexandre Juca <corextechnologies@gmail.com>
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 3 of the
+License, or (at your option) any later version.
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
+USA
+
